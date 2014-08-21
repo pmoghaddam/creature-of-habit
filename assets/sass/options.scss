@@ -1,0 +1,114 @@
+@import "compass/css3/text-shadow";
+@import "compass/css3/images";
+
+$opdir: right;
+$dir: left;
+
+//--------------------------------------------
+//
+// Css
+//
+//--------------------------------------------
+.icon-add-32 { background: image-url('icon/add-32.png') no-repeat };
+.icon-stop-32 { background: image-url('icon/stop-32.png') no-repeat };
+
+html {
+        background: image-url('options-bg.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+a {
+    color: white;
+    &:hover { text-decoration: none; }
+}
+
+#header {
+    height: 36px;
+    margin: 0 0 10px;
+    h1 {
+        font-size: 32px;
+        font-weight: bold;
+        color: white;
+        @include single-text-shadow(#333, 0, 1px, 2px);
+        float: left;
+    }
+    #tagline {
+        float: right;
+        font-size: 32px;
+        font-weight: bold;
+        color: red;
+        @include single-text-shadow(#333, 0, 1px, 2px);
+    }
+}
+
+.pym-delete-button {
+    $color: darken(red, 10%);
+    @include background(linear-gradient(top, lighten($color, 10%), lighten($color, 8%) 48%,
+                                        $color 52%, darken($color, 5%)));
+    &:hover {
+        $color: lighten($color, 7%);
+        @include background(linear-gradient(top, lighten($color, 10%), lighten($color, 8%) 48%,
+                                                    darken($color, 1%) 52%, darken($color, 5%)));
+    }
+    .x-btn-inner {
+        color: white;
+    }
+}
+.icon-list-entry {
+    img { float: left; }
+    span {
+        line-height: 20px;
+        padding: 0 0 0 6px;
+    }
+}
+
+#notification-tile {
+    .notification {
+        float: left;
+        font-size: 11px;
+        margin: 5px;
+        padding: 8px 15px;
+        text-align: center;
+        height: 100px;
+        width: 144px;
+        overflow: hidden;
+        cursor: pointer;
+        border-radius: 10px;
+        position: relative;
+
+        .type {
+            position: absolute;
+            opacity: 0.4;
+            top: 0;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background-size: 19px 19px;
+            background: 5px 5px no-repeat;
+            &.alarm { background-image: image-url("icon/alarm-32.png"); }
+            &.clock { background-image: image-url("icon/alarm-32.png"); }
+            &.quote { background-image: image-url("icon/document-32.png"); }
+        }
+
+        &.notification-over { background-color: #EDF1F7; }
+        &.x-item-selected { background-color: #B9CEF0; }
+        .title {
+            margin: 3px 0;
+            font-weight: bold;
+        }
+        .interval {
+            color: #444;
+            text-shadow: white 0 1px 0;
+        }
+    }
+}
+
+#footer {
+    margin-top: 10px;
+    color: white;
+    .opdir { float: $opdir; }
+    .dir { float: $dir; }
+}

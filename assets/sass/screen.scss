@@ -1,0 +1,68 @@
+@import "compass";
+@import "blueprint/grid";
+
+$blueprint-grid-columns: 6;
+$blueprint-container-size: $blueprint-grid-outer-width * $blueprint-grid-columns - $blueprint-grid-margin;
+
+@include blueprint-grid;
+
+//--------------------------------------------
+//
+// Variables
+//
+//--------------------------------------------
+$dir: left;
+$opdir: right;
+
+//--------------------------------------------
+//
+// Mixins
+//
+//--------------------------------------------
+@mixin css3-button($color, $font-color) {
+    @include background(linear-gradient($color, darken($color, 4%)));
+    border: 1px solid darken($color, 10%);
+    border-bottom: 1px solid darken($color, 15%);
+    @include border-radius(3px);
+    @include single-box-shadow(darken($color, 5%), 0 , 0, 1px);
+    color: $font-color;
+    font: bold 11px "Lucida Grande", "Lucida Sans Unicode";
+    line-height: 1;
+    padding: 7px 0 8px 0;
+    text-align: center;
+    text-shadow: 0 -1px 0 darken($color, 75%);
+
+    &:hover {
+        @include background(linear-gradient(darken($color, 4%), darken($color, 8%)));
+        cursor: pointer;
+    }
+}
+
+//--------------------------------------------
+//
+// CSS
+//
+//--------------------------------------------
+body {
+    font: 11px "Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+.opdir { float: $opdir; }
+.dir { float: $dir; }
+
+#inner {
+    #pym-start {
+        @include css3-button(#49BF00, white);
+    }
+    #pym-stop {
+        @include css3-button(red, white);
+    }
+}
+
+#footer {
+    margin: 5px 0 0;
+    a, a:visited {
+        text-decoration: none;
+        color: blue;
+        &:hover { text-decoration: underline; }
+    }
+}

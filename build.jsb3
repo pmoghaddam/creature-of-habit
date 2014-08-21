@@ -1,0 +1,107 @@
+{
+    "projectName": "Creature of Habit",
+    "licenseText": "Copyright(c) 2011 Payamo. Please contact payam@payamo.com for all inquiries.",
+    "builds": [
+        {
+            "name": "All Classes",
+            "target": "all-classes.js",
+            "options": {
+                "debug": true
+            },
+            "files": [
+                {
+                        "path": "extjs/app/model/",
+                        "name": "Notification.js"
+                },{
+                        "path": "extjs/app/model/",
+                        "name": "Settings.js"
+                },{
+                        "path": "extjs/app/store/",
+                        "name": "Notifications.js"
+                },{
+                        "path": "extjs/app/controller/",
+                        "name": "Background.js"
+                },{
+                        "path": "extjs/app/controller/",
+                        "name": "NotificationOptions.js"
+                },{
+                        "path": "extjs/app/logic/",
+                        "name": "Notification.js"
+                },{
+                        "path": "extjs/app/logic/",
+                        "name": "IntervalNotification.js"
+                },{
+                        "path": "extjs/app/logic/",
+                        "name": "QuoteNotification.js"
+                },{
+                        "path": "extjs/app/logic/",
+                        "name": "TimedNotification.js"
+                },{
+                        "path": "extjs/app/store/",
+                        "name": "Notification.js"
+                },{
+                        "path": "extjs/app/view/notification/",
+                        "name": "Form.js"
+                },{
+                        "path": "extjs/app/view/notification/",
+                        "name": "FormWindow.js"
+                },{
+                        "path": "extjs/app/view/notification/",
+                        "name": "SummaryWindow.js"
+                },{
+                        "path": "extjs/app/view/notification/",
+                        "name": "Tile.js"
+                },{
+                        "path": "extjs/app/view/",
+                        "name": "OptionsViewport.js"
+                }
+            ]
+        },
+        {
+            "name": "Application - Options",
+            "target": "options-all.js",
+            "compress": true,
+            "files": [
+                {
+                    "path": ".build/",
+                    "name": "all-classes.js"
+                },
+                {
+                    "path": "extjs/",
+                    "name": "options.js"
+                }
+            ]
+        },
+        {
+            "name": "Application - Index",
+            "target": "script-all.js",
+            "compress": true,
+            "files": [
+                {
+                    "path": ".build/",
+                    "name": "all-classes.js"
+                },
+                {
+                    "path": "extjs/",
+                    "name": "script.js"
+                }
+            ]
+        },
+        {
+            "name": "Application - Background",
+            "target": "background-all.js",
+            "compress": true,
+            "files": [
+                {
+                    "path": ".build/",
+                    "name": "all-classes.js"
+                },
+                {
+                    "path": "extjs/",
+                    "name": "background.js"
+                }
+            ]
+        }
+    ],
+    "resources": []
+}

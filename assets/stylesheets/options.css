@@ -1,0 +1,152 @@
+/* line 12, ../sass/options.scss */
+.icon-add-32 {
+  background: url('../images/icon/add-32.png?1276644496') no-repeat;
+}
+
+/* line 13, ../sass/options.scss */
+.icon-stop-32 {
+  background: url('../images/icon/stop-32.png?1276644494') no-repeat;
+}
+
+/* line 15, ../sass/options.scss */
+html {
+  background: url('../images/options-bg.jpg?1321674736') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 23, ../sass/options.scss */
+a {
+  color: white;
+}
+/* line 25, ../sass/options.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 28, ../sass/options.scss */
+#header {
+  height: 36px;
+  margin: 0 0 10px;
+}
+/* line 31, ../sass/options.scss */
+#header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  text-shadow: #333333 0 1px 2px;
+  float: left;
+}
+/* line 38, ../sass/options.scss */
+#header #tagline {
+  float: right;
+  font-size: 32px;
+  font-weight: bold;
+  color: red;
+  text-shadow: #333333 0 1px 2px;
+}
+
+/* line 47, ../sass/options.scss */
+.pym-delete-button {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff0000), color-stop(48%, #f50000), color-stop(52%, #cc0000), color-stop(100%, #b30000));
+  background: -webkit-linear-gradient(top, #ff0000, #f50000 48%, #cc0000 52%, #b30000);
+  background: -moz-linear-gradient(top, #ff0000, #f50000 48%, #cc0000 52%, #b30000);
+  background: -o-linear-gradient(top, #ff0000, #f50000 48%, #cc0000 52%, #b30000);
+  background: -ms-linear-gradient(top, #ff0000, #f50000 48%, #cc0000 52%, #b30000);
+  background: linear-gradient(top, #ff0000, #f50000 48%, #cc0000 52%, #b30000);
+}
+/* line 51, ../sass/options.scss */
+.pym-delete-button:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ff2424), color-stop(48%, #ff1a1a), color-stop(52%, #eb0000), color-stop(100%, #d60000));
+  background: -webkit-linear-gradient(top, #ff2424, #ff1a1a 48%, #eb0000 52%, #d60000);
+  background: -moz-linear-gradient(top, #ff2424, #ff1a1a 48%, #eb0000 52%, #d60000);
+  background: -o-linear-gradient(top, #ff2424, #ff1a1a 48%, #eb0000 52%, #d60000);
+  background: -ms-linear-gradient(top, #ff2424, #ff1a1a 48%, #eb0000 52%, #d60000);
+  background: linear-gradient(top, #ff2424, #ff1a1a 48%, #eb0000 52%, #d60000);
+}
+/* line 56, ../sass/options.scss */
+.pym-delete-button .x-btn-inner {
+  color: white;
+}
+
+/* line 61, ../sass/options.scss */
+.icon-list-entry img {
+  float: left;
+}
+/* line 62, ../sass/options.scss */
+.icon-list-entry span {
+  line-height: 20px;
+  padding: 0 0 0 6px;
+}
+
+/* line 69, ../sass/options.scss */
+#notification-tile .notification {
+  float: left;
+  font-size: 11px;
+  margin: 5px;
+  padding: 8px 15px;
+  text-align: center;
+  height: 100px;
+  width: 144px;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
+  position: relative;
+}
+/* line 82, ../sass/options.scss */
+#notification-tile .notification .type {
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-size: 19px 19px;
+  background: 5px 5px no-repeat;
+}
+/* line 91, ../sass/options.scss */
+#notification-tile .notification .type.alarm {
+  background-image: url('../images/icon/alarm-32.png?1276644496');
+}
+/* line 92, ../sass/options.scss */
+#notification-tile .notification .type.clock {
+  background-image: url('../images/icon/alarm-32.png?1276644496');
+}
+/* line 93, ../sass/options.scss */
+#notification-tile .notification .type.quote {
+  background-image: url('../images/icon/document-32.png?1276644496');
+}
+/* line 96, ../sass/options.scss */
+#notification-tile .notification.notification-over {
+  background-color: #EDF1F7;
+}
+/* line 97, ../sass/options.scss */
+#notification-tile .notification.x-item-selected {
+  background-color: #B9CEF0;
+}
+/* line 98, ../sass/options.scss */
+#notification-tile .notification .title {
+  margin: 3px 0;
+  font-weight: bold;
+}
+/* line 102, ../sass/options.scss */
+#notification-tile .notification .interval {
+  color: #444;
+  text-shadow: white 0 1px 0;
+}
+
+/* line 109, ../sass/options.scss */
+#footer {
+  margin-top: 10px;
+  color: white;
+}
+/* line 112, ../sass/options.scss */
+#footer .opdir {
+  float: right;
+}
+/* line 113, ../sass/options.scss */
+#footer .dir {
+  float: left;
+}
